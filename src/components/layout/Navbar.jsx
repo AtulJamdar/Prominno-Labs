@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import logo from "../../assets/logo.png";
 
 const navLinks = [
   "Home",
@@ -26,7 +27,11 @@ export default function Navbar() {
           className="flex items-center flex-shrink-0"
         >
           <div className="w-10 sm:w-12 h-10 sm:h-12 rounded-full bg-black text-white flex items-center justify-center text-base sm:text-lg font-bold">
-            S
+            <img 
+              src={logo}
+              alt="Logo"
+              className="w-full h-full object-cover"
+            />
           </div>
         </motion.div>
 
