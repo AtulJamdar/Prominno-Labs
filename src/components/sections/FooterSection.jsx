@@ -13,6 +13,8 @@ const footerLinks = [
   },
 ];
 
+import logo from "../../assets/logo.png";
+
 export default function FooterSection() {
   return (
     <div>
@@ -48,7 +50,11 @@ export default function FooterSection() {
             <div className="max-w-[267px]">
               {/* Logo */}
               <div className="w-14 h-14 rounded-full bg-black flex items-center justify-center text-white text-2xl font-bold">
-                S
+                <img
+                  src={logo}
+                  alt="Logo"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <p className="mt-4 sm:mt-6 text-[14px] sm:text-base text-gray-500 leading-relaxed">
                 Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sintelit officia consequat.

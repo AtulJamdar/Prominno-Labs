@@ -15,10 +15,10 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 w-full min-h-[70px] bg-white border-b border-gray-200">
+    <header className="sticky top-0 z-50 w-full h-[70px] bg-white border-b border-gray-200 flex items-center">
 
       {/* Main Navbar */}
-      <div className="max-w-[1160px] h-full mx-auto px-4 sm:px-6 flex items-center justify-between py-3 sm:py-0">
+      <div className="max-w-[1160px] w-full mx-auto px-4 sm:px-6 flex items-center justify-between">
 
         {/* Logo */}
         <motion.div
