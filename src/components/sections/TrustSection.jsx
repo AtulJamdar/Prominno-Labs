@@ -1,6 +1,9 @@
 import { motion } from "framer-motion";
 import { CheckCircle2 } from "lucide-react";
 import Button from "../ui/Button";
+import img1 from "../../assets/ct1.jpg";
+import img2 from "../../assets/ct2.jpg";
+import img3 from "../../assets/ct3.jpg";
 
 const features = [
   {
@@ -66,7 +69,7 @@ export default function TrustSection() {
                 className="hidden lg:block absolute top-0 left-0 w-[288px] h-[245px] overflow-hidden border border-gray-300"
               >
                 <img
-                  src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3"
+                  src={img1}
                   alt=""
                   className="w-full h-full object-cover transition-all duration-700"
                 />
@@ -79,7 +82,7 @@ export default function TrustSection() {
                 className="hidden lg:block absolute top-[46px] right-0 w-[154px] h-[205px] overflow-hidden border border-gray-300 hover:shadow-2xl"
               >
                 <img
-                  src="https://images.unsplash.com/photo-1497366754035-f200968a6e72"
+                  src={img2}
                   alt=""
                   className="w-full h-full object-cover transition-all duration-700"
                 />
@@ -92,7 +95,7 @@ export default function TrustSection() {
                 className="hidden lg:block absolute bottom-0 left-[90px] w-[245px] h-[186px] overflow-hidden border border-gray-300"
               >
                 <img
-                  src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f"
+                  src={img3}
                   alt=""
                   className="w-full h-full object-cover transition-all duration-700"
                 />

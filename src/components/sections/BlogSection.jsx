@@ -1,24 +1,27 @@
 import { motion } from "framer-motion";
 import Button from "../ui/Button";
+import img1 from "../../assets/blog1.jpg";
+import img2 from "../../assets/blog2.jpg";
+import img3 from "../../assets/blog3.jpg";
 
 const blogs = [
   {
     title: "Humans are much more smarter than AI",
     desc: "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur.",
     image:
-      "https://images.unsplash.com/photo-1516321318423-f06f85e504b3",
+      img1,
   },
   {
     title: "Humans are much more smarter than AI",
     desc: "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur.",
     image:
-      "https://images.unsplash.com/photo-1497366754035-f200968a6e72",
+      img2,
   },
   {
     title: "Humans are much more smarter than AI",
     desc: "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur.",
     image:
-      "https://images.unsplash.com/photo-1522202176988-66273c2fd55f",
+      img3,
   },
 ];
 

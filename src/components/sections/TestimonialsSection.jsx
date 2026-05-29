@@ -1,19 +1,21 @@
 import { motion } from "framer-motion";
 import { ArrowLeft, ArrowRight } from "lucide-react";
+import img1 from "../../assets/hc1.jpg";
+import img2 from "../../assets/hc2.jpg";
 
 const testimonials = [
   {
     name: "Jacqueline Wright",
     role: "Customer",
     image:
-      "https://images.unsplash.com/photo-1494790108377-be9c29b29330",
+      img1,
     text: "Lorem ipsum dolor sit amet consectetur. Condimentum eget vitae ligula sed urna sit sagittis interdum a. Blandit mattis mattis lobortis orci. Facilisis dui sagittis tempor egestas pellentesque eu maecenas. Risus lectus nisl.",
   },
   {
     name: "Jacqueline Wright",
     role: "Customer",
     image:
-      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80",
+      img2,
     text: "Lorem ipsum dolor sit amet consectetur. Condimentum eget vitae ligula sed urna sit sagittis interdum a. Blandit mattis mattis lobortis orci. Facilisis dui sagittis tempor egestas pellentesque eu maecenas. Risus lectus nisl.",
   },
 ];

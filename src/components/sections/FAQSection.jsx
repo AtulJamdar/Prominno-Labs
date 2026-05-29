@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Plus, Minus } from "lucide-react";
+import img1 from "../../assets/question.jpg";
 
 const faqData = [
   {
@@ -42,7 +43,7 @@ export default function FAQSection() {
           >
             <div className="w-full max-w-[466px] aspect-square lg:h-[466px] bg-[#D9D9D9] overflow-hidden">
               <img
-                src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f"
+                src={img1}
                 alt="FAQ"
                 className="w-full h-full object-cover"
               />

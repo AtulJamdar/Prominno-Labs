@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import img1 from "../../assets/buisness_stratergy.jpg";
 
 const stats = [
   {
@@ -91,7 +92,7 @@ export default function BusinessStrategy() {
           <div className="w-full max-w-[1160px] h-[250px] sm:h-[400px] lg:h-[645px] mx-auto overflow-hidden bg-[#D9D9D9]">
 
             <img
-              src="https://images.unsplash.com/photo-1497366811353-6870744d04b2"
+              src={img1}
               alt="Business"
               className="w-full h-full object-cover"
             />
