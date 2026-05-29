@@ -18,15 +18,15 @@ export default function FooterSection() {
     <div>
       {/* 1. TOP SECTION: Pure White Background */}
       <div className="bg-white relative z-10">
-        <div className="max-w-7xl mx-auto px-6 lg:px-10 translate-y-1/2">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 translate-y-1/2">
           {/* CTA Banner */}
-          <div className="bg-[#262626] rounded-[10px] px-8 md:px-[50px] py-[27px] flex flex-col md:flex-row items-start md:items-center justify-between gap-8 shadow-sm">
+          <div className="bg-[#262626] rounded-[10px] px-6 sm:px-8 lg:px-[50px] py-6 sm:py-7 lg:py-[27px] flex flex-col md:flex-row items-start md:items-center justify-between gap-6 sm:gap-8 shadow-sm">
             {/* Left Content */}
             <div>
-              <h2 className="text-white text-3xl font-semibold">
+              <h2 className="text-white text-[24px] sm:text-[28px] lg:text-3xl font-semibold">
                 Need more information?
               </h2>
-              <p className="text-gray-300 mt-3 text-base">
+              <p className="text-gray-300 mt-2 sm:mt-3 text-[14px] sm:text-base">
                 Write your concern to us and our specialist will get back to you.
               </p>
             </div>
@@ -40,17 +40,17 @@ export default function FooterSection() {
       </div>
 
       {/* 2. BOTTOM SECTION: Light Gray Background */}
-      <footer className="bg-[#F8F8F8] pt-24 pb-16">
-        <div className="max-w-7xl mx-auto px-6 lg:px-10">
+      <footer className="bg-[#F8F8F8] pt-12 sm:pt-16 lg:pt-24 pb-8 sm:pb-12 lg:pb-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
           {/* Footer Content */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-14 mt-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 sm:gap-10 lg:gap-14 mt-6 sm:mt-8 lg:mt-10">
             {/* Logo + Description */}
             <div className="max-w-[267px]">
               {/* Logo */}
               <div className="w-14 h-14 rounded-full bg-black flex items-center justify-center text-white text-2xl font-bold">
                 S
               </div>
-              <p className="mt-6 text-gray-500 leading-relaxed">
+              <p className="mt-4 sm:mt-6 text-[14px] sm:text-base text-gray-500 leading-relaxed">
                 Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sintelit officia consequat.
               </p>
             </div>
@@ -58,15 +58,15 @@ export default function FooterSection() {
             {/* Footer Links */}
             {footerLinks.map((section, index) => (
               <div key={index}>
-                <h3 className="text-[20px] font-medium text-[#262626]">
+                <h3 className="text-[16px] sm:text-[18px] lg:text-[20px] font-medium text-[#262626]">
                   {section.title}
                 </h3>
-                <ul className="mt-6 space-y-4">
+                <ul className="mt-4 sm:mt-6 space-y-3 sm:space-y-4">
                   {section.links.map((link, idx) => (
                     <li key={idx}>
                       <a
                         href="/"
-                        className="text-gray-500 hover:text-black transition-colors duration-300"
+                        className="text-[14px] sm:text-base text-gray-500 hover:text-black transition-colors duration-300"
                       >
                         {link}
                       </a>
@@ -78,11 +78,11 @@ export default function FooterSection() {
 
             {/* Socials */}
             <div>
-              <h3 className="text-[20px] font-medium text-[#262626]">
+              <h3 className="text-[16px] sm:text-[18px] lg:text-[20px] font-medium text-[#262626]">
                 Connect with us
               </h3>
 
-              <div className="flex items-center gap-4 mt-8">
+              <div className="flex items-center gap-3 sm:gap-4 mt-4 sm:mt-8">
                 {/* Facebook */}
                 <a
                   href="/"

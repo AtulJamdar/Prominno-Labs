@@ -28,10 +28,10 @@ export default function FAQSection() {
   };
 
   return (
-    <section className="py-24 bg-[#F8F8F8]">
-      <div className="max-w-7xl mx-auto px-6 lg:px-10">
+    <section className="py-12 sm:py-16 lg:py-24 bg-[#F8F8F8]">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
 
-        <div className="grid lg:grid-cols-2 gap-20 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-20 items-start lg:items-center">
 
           {/* Left Image */}
           <motion.div
@@ -40,7 +40,7 @@ export default function FAQSection() {
             transition={{ duration: 0.7 }}
             viewport={{ once: true }}
           >
-            <div className="w-full max-w-[466px] h-[466px] bg-[#D9D9D9] overflow-hidden">
+            <div className="w-full max-w-[466px] aspect-square lg:h-[466px] bg-[#D9D9D9] overflow-hidden">
               <img
                 src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f"
                 alt="FAQ"
@@ -56,11 +56,11 @@ export default function FAQSection() {
             transition={{ duration: 0.7 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-[30px] font-semibold text-[#262626]">
+            <h2 className="text-[24px] sm:text-[28px] lg:text-[30px] font-semibold text-[#262626]">
               Frequently asked questions
             </h2>
 
-            <div className="mt-10 space-y-5">
+            <div className="mt-6 sm:mt-8 lg:mt-10 space-y-4 sm:space-y-5">
 
               {faqData.map((faq, index) => (
                 <div
@@ -69,9 +69,9 @@ export default function FAQSection() {
                 >
                   <button
                     onClick={() => toggleFAQ(index)}
-                    className="w-full flex items-center justify-between px-5 py-4 text-left"
+                    className="w-full flex items-center justify-between px-4 sm:px-5 py-3 sm:py-4 text-left"
                   >
-                    <span className="font-medium text-[#262626]">
+                    <span className="font-medium text-[14px] sm:text-[16px] text-[#262626]">
                       {faq.question}
                     </span>
 
@@ -91,7 +91,7 @@ export default function FAQSection() {
                         transition={{ duration: 0.3 }}
                         className="overflow-hidden"
                       >
-                        <div className="px-5 pb-5 text-gray-600 leading-relaxed">
+                        <div className="px-4 sm:px-5 pb-4 sm:pb-5 text-[14px] sm:text-[16px] text-gray-600 leading-relaxed">
                           {faq.answer}
                         </div>
                       </motion.div>

@@ -24,8 +24,8 @@ const blogs = [
 
 export default function BlogSection() {
   return (
-    <section className="py-24 bg-[#F8F8F8]">
-      <div className="max-w-[1440px] mx-auto px-6">
+    <section className="py-12 sm:py-16 lg:py-24 bg-[#F8F8F8]">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6">
 
         {/* Heading */}
         <motion.div
@@ -35,13 +35,13 @@ export default function BlogSection() {
           viewport={{ once: true }}
           className="text-center"
         >
-          <h2 className="text-[40px] font-semibold leading-[100%] text-[#262626]">
+          <h2 className="text-[28px] sm:text-[34px] lg:text-[40px] font-semibold leading-[100%] text-[#262626]">
             Latest blog
           </h2>
         </motion.div>
 
         {/* Blog Cards */}
-        <div className="mt-[60px] flex flex-wrap justify-center gap-[30px]">
+        <div className="mt-10 sm:mt-14 lg:mt-[60px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-[30px]">
 
           {blogs.map((blog, index) => (
             <motion.article
@@ -53,11 +53,11 @@ export default function BlogSection() {
                 delay: index * 0.15,
               }}
               viewport={{ once: true }}
-              className="group w-[367px] h-[433px] border border-[#858585] bg-white overflow-hidden transition-all duration-500 hover:-translate-y-1 hover:shadow-md"
+              className="group w-full lg:w-[367px] flex flex-col border border-[#858585] bg-white overflow-hidden transition-all duration-500 hover:-translate-y-1 hover:shadow-md"
             >
 
               {/* Image */}
-              <div className="w-full h-[220px] bg-[#D9D9D9] overflow-hidden">
+              <div className="w-full h-[180px] sm:h-[200px] lg:h-[220px] bg-[#D9D9D9] overflow-hidden">
                 <img
                   src={blog.image}
                   alt={blog.title}
@@ -66,14 +66,14 @@ export default function BlogSection() {
               </div>
 
               {/* Content */}
-              <div className="p-6 flex flex-col justify-between h-[213px]">
+              <div className="p-4 sm:p-6 flex flex-col flex-1 justify-between">
 
                 <div>
-                  <h3 className="text-[24px] font-semibold leading-[130%] text-[#262626]">
+                  <h3 className="text-[18px] sm:text-[22px] lg:text-[24px] font-semibold leading-[130%] text-[#262626]">
                     {blog.title}
                   </h3>
 
-                  <p className="mt-4 text-[16px] leading-[160%] text-[#606060]">
+                  <p className="mt-3 sm:mt-4 text-[14px] sm:text-[15px] lg:text-[16px] leading-[160%] text-[#606060]">
                     {blog.desc}
                   </p>
                 </div>

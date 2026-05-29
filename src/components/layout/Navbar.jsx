@@ -14,18 +14,18 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 w-full h-[70px] bg-white border-b border-gray-200">
+    <header className="sticky top-0 z-50 w-full min-h-[70px] bg-white border-b border-gray-200">
 
       {/* Main Navbar */}
-      <div className="max-w-[1160px] h-full mx-auto px-6 flex items-center justify-between">
+      <div className="max-w-[1160px] h-full mx-auto px-4 sm:px-6 flex items-center justify-between py-3 sm:py-0">
 
         {/* Logo */}
         <motion.div
           initial={{ opacity: 0, y: -8 }}
           animate={{ opacity: 1, y: 0 }}
-          className="flex items-center"
+          className="flex items-center flex-shrink-0"
         >
-          <div className="w-12 h-12 rounded-full bg-black text-white flex items-center justify-center text-lg font-bold">
+          <div className="w-10 sm:w-12 h-10 sm:h-12 rounded-full bg-black text-white flex items-center justify-center text-base sm:text-lg font-bold">
             S
           </div>
         </motion.div>
@@ -34,14 +34,14 @@ export default function Navbar() {
         <div className="hidden lg:flex items-center gap-[60px]">
 
           {/* Links */}
-          <nav className="flex items-center gap-[60px]">
+          <nav className="hidden lg:flex items-center gap-[40px] xl:gap-[60px]">
 
             {navLinks.map((link, index) => (
               <motion.a
                 key={index}
                 href="/"
                 whileHover={{ opacity: 0.7 }}
-                className={`text-[16px] font-semibold transition-colors duration-300 ${
+                className={`text-[14px] xl:text-[16px] font-semibold transition-colors duration-300 ${
                   index === 0
                     ? "text-black"
                     : "text-[#262626] hover:text-black"
@@ -53,7 +53,7 @@ export default function Navbar() {
           </nav>
 
           {/* CTA Button */}
-          <button className="w-[162px] h-[49px] bg-black text-white text-sm font-semibold rounded-md hover:bg-gray-800 transition-all duration-300">
+          <button className="hidden lg:block w-[140px] xl:w-[162px] h-[45px] xl:h-[49px] bg-black text-white text-xs xl:text-sm font-semibold rounded-md hover:bg-gray-800 transition-all duration-300">
             Button
           </button>
         </div>
@@ -77,19 +77,19 @@ export default function Navbar() {
             transition={{ duration: 0.25 }}
             className="lg:hidden bg-white border-t border-gray-200"
           >
-            <div className="flex flex-col p-6 gap-5">
+            <div className="flex flex-col p-4 sm:p-6 gap-4 sm:gap-5">
 
               {navLinks.map((link, index) => (
                 <a
                   key={index}
                   href="/"
-                  className="text-[#262626] font-medium"
+                  className="text-[#262626] font-medium text-sm sm:text-base"
                 >
                   {link}
                 </a>
               ))}
 
-              <button className="mt-2 w-full h-[49px] bg-black text-white font-semibold rounded-md">
+              <button className="mt-2 w-full h-[45px] sm:h-[49px] bg-black text-white text-sm sm:text-base font-semibold rounded-md">
                 Button
               </button>
             </div>
