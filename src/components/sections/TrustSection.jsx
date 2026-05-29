@@ -104,7 +104,7 @@ export default function TrustSection() {
               {/* Mobile Single Image */}
               <div className="lg:hidden w-full h-full overflow-hidden border border-gray-300">
                 <img
-                  src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3"
+                  src={img1}
                   alt=""
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
