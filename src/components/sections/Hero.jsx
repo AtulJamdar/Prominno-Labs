@@ -17,7 +17,7 @@ export default function Hero() {
             transition={{ duration: 0.7 }}
             className="min-h-[400px] sm:min-h-[500px] lg:h-[628px] flex items-center justify-center px-4 sm:px-6"
           >
-            {/* Inner Content Box */}
+            {/* Inner Content Box. */}
             <div className="max-w-[472px] flex flex-col gap-6 sm:gap-10">
 
               {/* Small Label */}
