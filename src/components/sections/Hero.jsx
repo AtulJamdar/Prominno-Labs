@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import Button from "../ui/Button";
-import img1 from "../../assets/hero.jpg";
+import img1 from "../../assets/Hero.jpg";
 
 export default function Hero() {
   return (
