@@ -57,34 +57,46 @@ export default function TrustSection() {
             viewport={{ once: true }}
             className="flex justify-center items-center"
           >
-            <div className="relative w-full max-w-[463px] aspect-square lg:h-[452px] group">
+            <div className="relative w-full max-w-[463px] aspect-square lg:h-[452px]">
 
-              {/* Main Image */}
-              <div className="hidden lg:block absolute top-0 left-0 w-[288px] h-[245px] overflow-hidden border border-gray-300">
+              {/* Main Image - Scale + Rotate Effect */}
+              <motion.div
+                whileHover={{ scale: 1.08, rotate: 2 }}
+                transition={{ duration: 0.5 }}
+                className="hidden lg:block absolute top-0 left-0 w-[288px] h-[245px] overflow-hidden border border-gray-300"
+              >
                 <img
                   src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3"
                   alt=""
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  className="w-full h-full object-cover transition-all duration-700"
                 />
-              </div>
+              </motion.div>
 
-              {/* Side Image */}
-              <div className="hidden lg:block absolute top-[46px] right-0 w-[154px] h-[205px] overflow-hidden border border-gray-300">
+              {/* Side Image - Scale + Shadow Effect */}
+              <motion.div
+                whileHover={{ scale: 1.12, y: -5 }}
+                transition={{ duration: 0.5 }}
+                className="hidden lg:block absolute top-[46px] right-0 w-[154px] h-[205px] overflow-hidden border border-gray-300 hover:shadow-2xl"
+              >
                 <img
                   src="https://images.unsplash.com/photo-1497366754035-f200968a6e72"
                   alt=""
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  className="w-full h-full object-cover transition-all duration-700"
                 />
-              </div>
+              </motion.div>
 
-              {/* Bottom Image */}
-              <div className="hidden lg:block absolute bottom-0 left-[90px] w-[245px] h-[186px] overflow-hidden border border-gray-300">
+              {/* Bottom Image - Scale + Skew Effect */}
+              <motion.div
+                whileHover={{ scale: 1.1, skewY: -2 }}
+                transition={{ duration: 0.5 }}
+                className="hidden lg:block absolute bottom-0 left-[90px] w-[245px] h-[186px] overflow-hidden border border-gray-300"
+              >
                 <img
                   src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f"
                   alt=""
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  className="w-full h-full object-cover transition-all duration-700"
                 />
-              </div>
+              </motion.div>
 
               {/* Mobile Single Image */}
               <div className="lg:hidden w-full h-full overflow-hidden border border-gray-300">

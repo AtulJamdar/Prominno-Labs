@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import Button from "../ui/Button";
+import heroImage from "../../assets/hero.jpg";
 
 export default function Hero() {
   return (
@@ -58,7 +59,7 @@ export default function Hero() {
           >
             {/* Image */}
             <img
-              src="https://images.unsplash.com/photo-1498050108023-c5249f4df085"
+              src={heroImage}
               alt="Hero"
               className="w-full h-full object-cover"
             />
